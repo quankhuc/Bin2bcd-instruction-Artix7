@@ -1,0 +1,338 @@
+
+*** Running vivado
+    with args -log testbench.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source testbench.tcl -notrace
+Command: synth_design -top testbench -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 33964
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1019.074 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'testbench' [C:/Users/quank/Lab 5/testbench.vhd:28]
+INFO: [Synth 8-3491] module 'rsrc' declared at 'C:/Users/quank/Lab 5/rsrc.vhd:11' bound to instance 'rsrc1' of component 'rsrc' [C:/Users/quank/Lab 5/testbench.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'rsrc' [C:/Users/quank/Lab 5/rsrc.vhd:21]
+INFO: [Synth 8-3491] module 'pc' declared at 'C:/Users/quank/Lab 5/pc.vhd:11' bound to instance 'rsrcpc' of component 'pc' [C:/Users/quank/Lab 5/rsrc.vhd:206]
+INFO: [Synth 8-638] synthesizing module 'pc' [C:/Users/quank/Lab 5/pc.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'pc' (1#1) [C:/Users/quank/Lab 5/pc.vhd:20]
+INFO: [Synth 8-3491] module 'a' declared at 'C:/Users/quank/Lab 5/a.vhd:10' bound to instance 'rsrcareg' of component 'a' [C:/Users/quank/Lab 5/rsrc.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'a' [C:/Users/quank/Lab 5/a.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'a' (2#1) [C:/Users/quank/Lab 5/a.vhd:17]
+INFO: [Synth 8-3491] module 'c' declared at 'C:/Users/quank/Lab 5/c.vhd:10' bound to instance 'rsrccreg' of component 'c' [C:/Users/quank/Lab 5/rsrc.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'c' [C:/Users/quank/Lab 5/c.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'c' (3#1) [C:/Users/quank/Lab 5/c.vhd:18]
+INFO: [Synth 8-3491] module 'alu' declared at 'C:/Users/quank/Lab 5/alu.vhd:12' bound to instance 'rsrcalu' of component 'alu' [C:/Users/quank/Lab 5/rsrc.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/quank/Lab 5/alu.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'alu' (4#1) [C:/Users/quank/Lab 5/alu.vhd:32]
+INFO: [Synth 8-3491] module 'shiftcounter' declared at 'C:/Users/quank/Lab 5/shiftcounter.vhd:11' bound to instance 'rsrcshiftcounter' of component 'shiftcounter' [C:/Users/quank/Lab 5/rsrc.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'shiftcounter' [C:/Users/quank/Lab 5/shiftcounter.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'shiftcounter' (5#1) [C:/Users/quank/Lab 5/shiftcounter.vhd:17]
+INFO: [Synth 8-3491] module 'regfile' declared at 'C:/Users/quank/Lab 5/regfile.vhd:10' bound to instance 'rsrcregfile' of component 'regfile' [C:/Users/quank/Lab 5/rsrc.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/Users/quank/Lab 5/regfile.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (6#1) [C:/Users/quank/Lab 5/regfile.vhd:24]
+INFO: [Synth 8-3491] module 'ma' declared at 'C:/Users/quank/Lab 5/ma.vhd:10' bound to instance 'rsrcmareg' of component 'ma' [C:/Users/quank/Lab 5/rsrc.vhd:264]
+INFO: [Synth 8-638] synthesizing module 'ma' [C:/Users/quank/Lab 5/ma.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'ma' (7#1) [C:/Users/quank/Lab 5/ma.vhd:17]
+INFO: [Synth 8-3491] module 'md' declared at 'C:/Users/quank/Lab 5/md.vhd:10' bound to instance 'rsrcmdreg' of component 'md' [C:/Users/quank/Lab 5/rsrc.vhd:270]
+INFO: [Synth 8-638] synthesizing module 'md' [C:/Users/quank/Lab 5/md.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'md' (8#1) [C:/Users/quank/Lab 5/md.vhd:21]
+INFO: [Synth 8-3491] module 'ir' declared at 'C:/Users/quank/Lab 5/ir.vhd:10' bound to instance 'rsrcirreg' of component 'ir' [C:/Users/quank/Lab 5/rsrc.vhd:280]
+INFO: [Synth 8-638] synthesizing module 'ir' [C:/Users/quank/Lab 5/ir.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ir' (9#1) [C:/Users/quank/Lab 5/ir.vhd:20]
+INFO: [Synth 8-3491] module 'conbit' declared at 'C:/Users/quank/Lab 5/conbit.vhd:10' bound to instance 'rsrcconbit' of component 'conbit' [C:/Users/quank/Lab 5/rsrc.vhd:289]
+INFO: [Synth 8-638] synthesizing module 'conbit' [C:/Users/quank/Lab 5/conbit.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'conbit' (10#1) [C:/Users/quank/Lab 5/conbit.vhd:16]
+INFO: [Synth 8-3491] module 'control' declared at 'C:/Users/quank/Lab 5/control.vhd:11' bound to instance 'rsrccontrol' of component 'control' [C:/Users/quank/Lab 5/rsrc.vhd:294]
+INFO: [Synth 8-638] synthesizing module 'control' [C:/Users/quank/Lab 5/control.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'control' (11#1) [C:/Users/quank/Lab 5/control.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'rsrc' (12#1) [C:/Users/quank/Lab 5/rsrc.vhd:21]
+INFO: [Synth 8-3491] module 'eprom' declared at 'C:/Users/quank/Lab 5/eprom.vhd:8' bound to instance 'eprom1' of component 'eprom' [C:/Users/quank/Lab 5/testbench.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'eprom' [C:/Users/quank/Lab 5/eprom.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'eprom' (13#1) [C:/Users/quank/Lab 5/eprom.vhd:15]
+INFO: [Synth 8-3491] module 'sram' declared at 'C:/Users/quank/Lab 5/sram.vhd:11' bound to instance 'sram1' of component 'sram' [C:/Users/quank/Lab 5/testbench.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'sram' [C:/Users/quank/Lab 5/sram.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'sram' (14#1) [C:/Users/quank/Lab 5/sram.vhd:20]
+INFO: [Synth 8-3491] module 'pins' declared at 'C:/Users/quank/Lab 5/pins.vhd:9' bound to instance 'pins1' of component 'pins' [C:/Users/quank/Lab 5/testbench.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'pins' [C:/Users/quank/Lab 5/pins.vhd:27]
+INFO: [Synth 8-226] default block is never used [C:/Users/quank/Lab 5/pins.vhd:70]
+INFO: [Synth 8-226] default block is never used [C:/Users/quank/Lab 5/pins.vhd:81]
+INFO: [Synth 8-226] default block is never used [C:/Users/quank/Lab 5/pins.vhd:92]
+INFO: [Synth 8-226] default block is never used [C:/Users/quank/Lab 5/pins.vhd:111]
+INFO: [Synth 8-226] default block is never used [C:/Users/quank/Lab 5/pins.vhd:130]
+INFO: [Synth 8-226] default block is never used [C:/Users/quank/Lab 5/pins.vhd:149]
+INFO: [Synth 8-226] default block is never used [C:/Users/quank/Lab 5/pins.vhd:168]
+INFO: [Synth 8-226] default block is never used [C:/Users/quank/Lab 5/pins.vhd:187]
+INFO: [Synth 8-226] default block is never used [C:/Users/quank/Lab 5/pins.vhd:206]
+INFO: [Synth 8-256] done synthesizing module 'pins' (15#1) [C:/Users/quank/Lab 5/pins.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'testbench' (16#1) [C:/Users/quank/Lab 5/testbench.vhd:28]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1019.074 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1019.074 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1019.074 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1019.074 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/quank/Lab 5/testbench.xdc]
+Finished Parsing XDC File [C:/Users/quank/Lab 5/testbench.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/quank/Lab 5/testbench.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/testbench_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/testbench_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1099.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1099.484 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1099.484 ; gain = 80.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1099.484 ; gain = 80.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1099.484 ; gain = 80.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                         00000001 |                              000
+                      s1 |                         00000010 |                              001
+                      s2 |                         00000100 |                              010
+                      s3 |                         00001000 |                              011
+                      s4 |                         00010000 |                              100
+                      s5 |                         00100000 |                              101
+                      s6 |                         01000000 |                              110
+                      s7 |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1099.484 ; gain = 80.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 224   
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 40    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
++---Muxes : 
+	  14 Input   32 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 5     
+	  16 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 29    
+	   8 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 7     
+	   2 Input    5 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 195   
+	  32 Input    1 Bit        Muxes := 32    
+	   2 Input    1 Bit        Muxes := 63    
+	   4 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 5     
+	   5 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 29    
+	  16 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:20 ; elapsed = 00:04:23 . Memory (MB): peak = 1213.844 ; gain = 194.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives       | 
++------------+-------------------+-----------+----------------------+------------------+
+|testbench   | sram1/myarray_reg | Implied   | 1 K x 32             | RAM256X1S x 128	 | 
++------------+-------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:28 ; elapsed = 00:04:30 . Memory (MB): peak = 1213.844 ; gain = 194.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:08:22 ; elapsed = 00:08:25 . Memory (MB): peak = 1425.652 ; gain = 406.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives       | 
++------------+-------------------+-----------+----------------------+------------------+
+|testbench   | sram1/myarray_reg | Implied   | 1 K x 32             | RAM256X1S x 128	 | 
++------------+-------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:08:26 ; elapsed = 00:08:29 . Memory (MB): peak = 1425.652 ; gain = 406.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:08:30 ; elapsed = 00:08:33 . Memory (MB): peak = 1425.652 ; gain = 406.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:08:30 ; elapsed = 00:08:33 . Memory (MB): peak = 1425.652 ; gain = 406.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:08:31 ; elapsed = 00:08:34 . Memory (MB): peak = 1425.652 ; gain = 406.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:08:31 ; elapsed = 00:08:34 . Memory (MB): peak = 1425.652 ; gain = 406.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:08:31 ; elapsed = 00:08:34 . Memory (MB): peak = 1425.652 ; gain = 406.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:08:31 ; elapsed = 00:08:34 . Memory (MB): peak = 1425.652 ; gain = 406.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |    23|
+|3     |LUT1      |     4|
+|4     |LUT2      |   216|
+|5     |LUT3      |    92|
+|6     |LUT4      |   235|
+|7     |LUT5      |   255|
+|8     |LUT6      |  1161|
+|9     |MUXF7     |   250|
+|10    |MUXF8     |    51|
+|11    |RAM256X1S |   128|
+|12    |FDRE      |  1314|
+|13    |FDSE      |     1|
+|14    |IBUF      |     3|
+|15    |OBUF      |    17|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:08:31 ; elapsed = 00:08:34 . Memory (MB): peak = 1425.652 ; gain = 406.578
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:08:17 ; elapsed = 00:08:31 . Memory (MB): peak = 1425.652 ; gain = 326.168
+Synthesis Optimization Complete : Time (s): cpu = 00:08:31 ; elapsed = 00:08:34 . Memory (MB): peak = 1425.652 ; gain = 406.578
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1425.652 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 452 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1425.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:08:40 ; elapsed = 00:08:52 . Memory (MB): peak = 1425.652 ; gain = 406.578
+INFO: [Common 17-1381] The checkpoint 'C:/Users/quank/Lab 5/Lab 5.runs/synth_1/testbench.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file testbench_utilization_synth.rpt -pb testbench_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 29 11:21:53 2021...

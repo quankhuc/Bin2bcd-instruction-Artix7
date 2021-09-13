@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 28 20:41:15 2021
+# Process ID: 23388
+# Current directory: C:/Users/quank/Lab 5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28320 C:\Users\quank\Lab 5\Lab 5.xpr
+# Log file: C:/Users/quank/Lab 5/vivado.log
+# Journal file: C:/Users/quank/Lab 5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/quank/Lab 5/Lab 5.xpr}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+current_wave_config {Untitled 2}
+add_wave {{/testbench/pins1}} 
+add_force {/testbench/clk100} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/testbench/clk} -radix hex {1 0ns} {0 20000ps} -repeat_every 40000ps
+add_force {/testbench/reset_l} -radix hex {0 0ns}
+run 55 ns
+add_force {/testbench/reset_l} -radix hex {1 0ns}
+run 800 ns
+run 100000 ns
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source testbench.tcl
+source lab5testcommand.txt
+close_sim

@@ -1,0 +1,8 @@
+add_wave {{/testbench/pins1}} 
+add_force {/testbench/clk100} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/testbench/clk} -radix hex {1 0ns} {0 20000ps} -repeat_every 40000ps
+add_force {/testbench/reset_l} -radix hex {0 0ns}
+run 55 ns
+add_force {/testbench/reset_l} -radix hex {1 0ns}
+run 800 ns
+run 100000 ns

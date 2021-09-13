@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 29 11:57:19 2021
+# Process ID: 34620
+# Current directory: C:/Users/quank/Lab 5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34204 C:\Users\quank\Lab 5\Lab 5.xpr
+# Log file: C:/Users/quank/Lab 5/vivado.log
+# Journal file: C:/Users/quank/Lab 5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/quank/Lab 5/Lab 5.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/quank/Lab 5/Lab 5.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:12 . Memory (MB): peak = 1018.277 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 4
+[Thu Apr 29 13:01:53 2021] Launched impl_1...
+Run output will be captured here: C:/Users/quank/Lab 5/Lab 5.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Apr 29 13:07:59 2021] Launched impl_1...
+Run output will be captured here: C:/Users/quank/Lab 5/Lab 5.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 29 13:10:57 2021...

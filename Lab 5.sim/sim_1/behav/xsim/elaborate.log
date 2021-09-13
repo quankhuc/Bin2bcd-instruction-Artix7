@@ -1,0 +1,31 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ed672b7184fd49349d6da7ab47268cf6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.pc [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.a [a_default]
+Compiling architecture behavioral of entity xil_defaultlib.c [c_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.shiftcounter [shiftcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.regfile [regfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.ma [ma_default]
+Compiling architecture behavioral of entity xil_defaultlib.md [md_default]
+Compiling architecture behavioral of entity xil_defaultlib.ir [ir_default]
+Compiling architecture behavioral of entity xil_defaultlib.conbit [conbit_default]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture structure of entity xil_defaultlib.rsrc [rsrc_default]
+Compiling architecture behavioral of entity xil_defaultlib.eprom [eprom_default]
+Compiling architecture behavioral of entity xil_defaultlib.sram [sram_default]
+Compiling architecture foo of entity xil_defaultlib.pins [pins_default]
+Compiling architecture structure of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_behav

@@ -1,0 +1,245 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 28 20:41:15 2021
+# Process ID: 23388
+# Current directory: C:/Users/quank/Lab 5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28320 C:\Users\quank\Lab 5\Lab 5.xpr
+# Log file: C:/Users/quank/Lab 5/vivado.log
+# Journal file: C:/Users/quank/Lab 5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/quank/Lab 5/Lab 5.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/quank/Lab 5/Lab 5.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:56 ; elapsed = 00:00:17 . Memory (MB): peak = 1015.621 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Wed Apr 28 20:43:50 2021] Launched synth_1...
+Run output will be captured here: C:/Users/quank/Lab 5/Lab 5.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Apr 28 21:10:01 2021] Launched synth_1...
+Run output will be captured here: C:/Users/quank/Lab 5/Lab 5.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/quank/Lab 5/Lab 5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/quank/Lab 5/Lab 5.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/quank/Lab 5/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/quank/Lab 5/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/quank/Lab 5/rsrc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rsrc'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/quank/Lab 5/Lab 5.sim/sim_1/behav/xsim'
+"xelab -wto ed672b7184fd49349d6da7ab47268cf6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ed672b7184fd49349d6da7ab47268cf6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.pc [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.a [a_default]
+Compiling architecture behavioral of entity xil_defaultlib.c [c_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.shiftcounter [shiftcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.regfile [regfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.ma [ma_default]
+Compiling architecture behavioral of entity xil_defaultlib.md [md_default]
+Compiling architecture behavioral of entity xil_defaultlib.ir [ir_default]
+Compiling architecture behavioral of entity xil_defaultlib.conbit [conbit_default]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture structure of entity xil_defaultlib.rsrc [rsrc_default]
+Compiling architecture behavioral of entity xil_defaultlib.eprom [eprom_default]
+Compiling architecture behavioral of entity xil_defaultlib.sram [sram_default]
+Compiling architecture foo of entity xil_defaultlib.pins [pins_default]
+Compiling architecture structure of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/quank/Lab 5/Lab 5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1015.621 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/quank/Lab 5/Lab 5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/quank/Lab 5/Lab 5.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/quank/Lab 5/Lab 5.sim/sim_1/behav/xsim'
+"xelab -wto ed672b7184fd49349d6da7ab47268cf6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ed672b7184fd49349d6da7ab47268cf6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/quank/Lab 5/Lab 5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1015.621 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/testbench/pins1}} 
+add_force {/testbench/clk100} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/testbench/clk} -radix hex {1 0ns} {0 20000ps} -repeat_every 40000ps
+add_force {/testbench/reset_l} -radix hex {0 0ns}
+run 55 ns
+add_force {/testbench/reset_l} -radix hex {1 0ns}
+run 800 ns
+run 100000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.621 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Apr 29 11:12:50 2021] Launched synth_1...
+Run output will be captured here: C:/Users/quank/Lab 5/Lab 5.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/quank/Lab 5/Lab 5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/quank/Lab 5/Lab 5.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/quank/Lab 5/eprom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'eprom'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/quank/Lab 5/Lab 5.sim/sim_1/behav/xsim'
+"xelab -wto ed672b7184fd49349d6da7ab47268cf6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ed672b7184fd49349d6da7ab47268cf6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.pc [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.a [a_default]
+Compiling architecture behavioral of entity xil_defaultlib.c [c_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.shiftcounter [shiftcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.regfile [regfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.ma [ma_default]
+Compiling architecture behavioral of entity xil_defaultlib.md [md_default]
+Compiling architecture behavioral of entity xil_defaultlib.ir [ir_default]
+Compiling architecture behavioral of entity xil_defaultlib.conbit [conbit_default]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture structure of entity xil_defaultlib.rsrc [rsrc_default]
+Compiling architecture behavioral of entity xil_defaultlib.eprom [eprom_default]
+Compiling architecture behavioral of entity xil_defaultlib.sram [sram_default]
+Compiling architecture foo of entity xil_defaultlib.pins [pins_default]
+Compiling architecture structure of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/quank/Lab 5/Lab 5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1015.621 ; gain = 0.000
+source lab5testcommand.txt
+# add_wave {{/testbench/pins1}} 
+# add_force {/testbench/clk100} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+# add_force {/testbench/clk} -radix hex {1 0ns} {0 20000ps} -repeat_every 40000ps
+# add_force {/testbench/reset_l} -radix hex {0 0ns}
+# run 55 ns
+# add_force {/testbench/reset_l} -radix hex {1 0ns}
+# run 800 ns
+# run 100000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 29 11:35:21 2021...

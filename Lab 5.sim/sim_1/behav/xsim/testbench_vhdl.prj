@@ -1,0 +1,21 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../a.vhd" \
+"../../../../alu.vhd" \
+"../../../../c.vhd" \
+"../../../../conbit.vhd" \
+"../../../../control.vhd" \
+"../../../../eprom.vhd" \
+"../../../../ir.vhd" \
+"../../../../ma.vhd" \
+"../../../../md.vhd" \
+"../../../../pc.vhd" \
+"../../../../pins.vhd" \
+"../../../../regfile.vhd" \
+"../../../../rsrc.vhd" \
+"../../../../shiftcounter.vhd" \
+"../../../../sram.vhd" \
+"../../../../testbench.vhd" \
+
+# Do not sort compile order
+nosort
