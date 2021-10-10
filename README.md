@@ -1,3 +1,2 @@
 # Bin2bcd-instruction-Artix7
-In this lab, I added a new instruction to the RISC computer. The instruction is called sqrt, which is used to calculate a square root of a number and then return to another number.
-Each number is stored into a different regiters
+In this lab, I added a new instruction to the RISC computer. The instruction is called bin2bcd, which is used to convert a binary number to a binary-coded decimal number. Each number is stored into a different regiters. The Lab2.xpr file can be used with Xilinx tool to see the simulation of this instruction. 
