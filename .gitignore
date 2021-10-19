@@ -67,8 +67,8 @@ _ngo/
 _xmsgs/
 
 # Run folders
-Lab5.cache/
-Lab5.hw/
-Lab5.ip_user_files/
-Lab5.runs/
-Lab5.sim/
+Lab5.cache
+Lab5.hw
+Lab5.ip_user_files
+Lab5.runs
+Lab5.sim
